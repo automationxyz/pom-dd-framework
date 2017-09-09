@@ -1,4 +1,5 @@
 package com.automation.tests;
+
 import org.testng.annotations.Test;
 import com.automation.page.HomePage;
 import com.automation.page.SignInPage;
@@ -26,7 +27,7 @@ public class MacysLoginTest {
 
 	@Test(dataProvider = "testdata")
 	public void macysLoginScriptTest(String emailAdress, String passwordText) throws IOException {
-
+		// This is my first test case
 		// a) open the browser - ff/chrome
 		// create the BrowserSelector object
 		BrowserSelector browserSelectorObject = new BrowserSelector();
