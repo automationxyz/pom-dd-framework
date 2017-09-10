@@ -16,13 +16,15 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.DataProvider;
 
 public class MacysLoginTest {
-
+    // open  the file
 	@DataProvider(name = "testdata")
 	public Object[][] getTestDataForLogin() throws IOException {
 		ExcelFileReader excelFileReaderObj = new ExcelFileReader();
 		excelFileReaderObj.locateAndOpenExcelFile();
 		Object[][] testData = excelFileReaderObj.getTestData();
 		return testData;
+		
+		
 	}
 
 	@Test(dataProvider = "testdata")
